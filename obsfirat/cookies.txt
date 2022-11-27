@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+jasig.firat.edu.tr	TRUE	/cas/	FALSE	1999999999	JSESSIONID	4DB00697D218F46F7562DED1369B08AE
+jasig.firat.edu.tr	TRUE	/	FALSE	1999999999	org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE	tr
+
