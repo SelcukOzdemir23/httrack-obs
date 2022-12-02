@@ -26,8 +26,8 @@ app.post("/sendFakeMail", (req, res) => {
     host: "host_address",
     port: PORT_NUMBER,
     auth: {
-      user: "username@domain.com",
-      pass: "Password",
+      user: "3muharremcandan@gmail.com",
+      pass: "bfhzrcursrxhoopj",
     },
   });
 

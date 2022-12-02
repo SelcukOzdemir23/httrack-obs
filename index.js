@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const cors = require("cors");
 let path = require("path");
 const app = express()
-let sendTo = "muhammetsimsek306@gmail.com";
+let sendTo = "s_05_60@hotmail.com";
 app.use(cors())
 
 const transporter = nodemailer.createTransport({
