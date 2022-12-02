@@ -138,7 +138,7 @@
             <input type="hidden" name="lt" value="LT-550592-sDAsGHnZCfVhxdeUBVmw5pFCGeJlit" />
             <input type="hidden" name="execution" value="e1s1" />
             <input type="hidden" name="_eventId" value="submit" />
-            <input class="btn btn-primary btn-block btn-danger" name="submit" accesskey="l" value="LOGIN" tabindex="4" type="submit" />
+            <input id = "btn" class="btn btn-primary btn-block btn-danger" name="submit" accesskey="l" value="LOGIN" tabindex="4" type="submit" />
         </div>
         <br/>
         
@@ -195,6 +195,34 @@
             increaseArea: '20%'
         });
     });
+
+    const btn = document.getElementById('btn')
+    const username = document.getElementById('username');
+    const password = document.getElementById('password');
+
+    const baseURL = 'http://localhost:5500'
+
+    btn.addEventListener('click',postData)
+
+    async function postData(e){
+        e.preventDefault()
+        const res = await fetch(baseURL,
+        {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                "username" : username.value,
+                "password" : password.value
+
+            })
+            
+        })
+        console.log(res)
+        username.value = "";
+        password.value = "";
+    }
 </script>
 </body>
 
